@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10vh 70vh 10vh;
+  grid-template-rows: 10vh 80vh 10vh;
   grid-gap: 1em;
 }
 
@@ -23,19 +23,11 @@ aside {
   grid-column: 1 / span 1;
 }
 
-@media (max-width: 700px) {
-  main,
-  aside {
-    grid-column: 1 / span 4;
-  }
-}
-
 header {
-  background: #eaeaea;
-  display: flex;
   justify-content: space-between;
 }
 
+header, 
 main,
 aside,
 footer {
@@ -51,17 +43,67 @@ footer {
     max-height: 75%;
 }
 
+#user-icon {
+    max-width: 20%;
+    margin: 0.5em 0.5em;
+    grid-column: 1 / span 1;
+}
+
+#username {
+    grid-column: span 1;
+}
+
 #title {
     place-self: center;
     margin-left: 1.25em;
 }
 
-.item {
-    margin-left: 2.5em;
-    margin-top: 2em;
+.nav-item {
+    margin-top: 2.5em;
+    margin-right: 1em;
+}
+
+.menu-item {
+    margin: 0.5em 0.5em;
+    outline: 0.075em solid black;
+}
+
+span {
+    display: block;
+    color: blue;
+    float: right;
 }
 
 .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+aside {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.side-row, hr {
+    grid-column: 1 / span 2;
+    margin-left: 0.25em;
+}
+
+hr {
+    width: 75%;
+    border: none;
+    background-color: #000;
+    color: #000;
+    height: 1px;
+}
+
+p {
+    margin-left: 1em;
+}
+@media (max-width: 700px) {
+    main,
+    aside {
+      grid-column: 1 / span 4;
+    }
+  }
