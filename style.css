@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10vh 70vh 10vh;
+  grid-gap: 1em;
+}
+
+body {
+    margin: 0 1em 0 1em;
+  }
+
+header,
+footer {
+  grid-column: 1 / span 4;
+}
+
+main {
+  grid-column: 1 / span 1;
+}
+
+aside {
+  grid-column: span 2;
+}
+
+@media (max-width: 700px) {
+  main,
+  aside {
+    grid-column: 1 / span 4;
+  }
+}
+
+header,
+main,
+aside,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
