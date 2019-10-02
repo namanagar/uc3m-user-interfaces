@@ -145,13 +145,6 @@ p {
     }
   }
 
-main {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 10% 30% 10% 20%;
-
-}
-
 form {
     grid-column: 1 / span 2;
     display: grid;
