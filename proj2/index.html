@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <h1 class="navbar-brand mb-0 h1">My To-Do List App</h1>
+    </nav>
+    <div class="ui container-fluid">
+      <div class="lists row">
+        <div class="list col-md-4" id="biglist1">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">To Do</h3>
+            </div>
+            <div class="card-body">
+              <ul id="list1" class="drop">
+                <li class="ui-state-default">Item 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list col-md-4" id="biglist2">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">In Progress</h3>
+            </div>
+            <div class="card-body">
+              <ul id="list2" class="drop">
+                <li class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="https://via.placeholder.com/150" alt="" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-title">
+                          <h4>Card 1</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row padded">
+                      <div class="col-md-2">Logo</div>
+                      <div class="col-md-2">Logo</div>
+                      <div class="col-md-2">Logo</div>
+                      <div class="col-md-6">Timestamp</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="list col-md-4" id="biglist3">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Done</h3>
+            </div>
+            <div class="card-body">
+              <ul id="list1" class="drop">
+                <li class="ui-state-default">Item 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

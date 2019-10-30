@@ -1,0 +1,30 @@
+#list1 li,
+#list2 li,
+#list3 li {
+  font-size: 1.2em;
+}
+
+nav {
+    min-height: 7.5%;
+    margin-bottom: 2%;
+    font-size: 3em !important;
+}
+
+.container {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+img {
+    max-width: 75px;
+}
+
+.padded {
+    padding-top: 1em;
+}
+
+#list1,
+#list2,
+#list3 {
+  min-height: 50vh;
+}
