@@ -1,5 +1,4 @@
 $("form").submit(function(event){
-    event.preventDefault();
     let error = $("#error");
     let password = $("#password").val();
     let email = $("#primary_email").val();
@@ -17,12 +16,12 @@ $("form").submit(function(event){
             valid = true;
             username = cur_user_data["username"];
             document.cookie = 'loggedIn = true';
-            document.cookie = `username = ${username}`
+            document.cookie = `username = ${username}`;
+            return true
         }
     }
-    if (!valid) {
-        error.html("email not registered");
-    }
+    error.html("email not registered");
+    return false
 
 
 });

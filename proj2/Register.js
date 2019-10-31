@@ -12,7 +12,6 @@ function checkPassword(){
 }
 
 $("form").submit(function(event){
-    event.preventDefault();
     let error = $("#error");
     let passwordError = checkPassword();
     let checkbox = $("#checkbox").prop('checked');
@@ -42,26 +41,26 @@ $("form").submit(function(event){
             let cur_email = cur_user_cookie[0].trim();
             if (email === cur_email) {
                 error.html('email already taken');
-                taken = true
+                return false
             }
         }
-        if (!taken) {
-            let user = {
-                'username': username,
-                'password': password,
-                'first_name': first_name,
-                'last_name': last_name,
-                'email': email,
-                'dob': dob,
-                'interests': interests,
-                'language': language,
-                'purpose': purpose,
+        let user = {
+            'username': username,
+            'password': password,
+            'first_name': first_name,
+            'last_name': last_name,
+            'email': email,
+            'dob': dob,
+            'interests': interests,
+            'language': language,
+            'purpose': purpose,
 
-            };
+        };
 
-            let string_user = JSON.stringify(user);
-            document.cookie = `${email}= ${string_user}`;
-            document.cookie = `loggedIn = false`;
+        let string_user = JSON.stringify(user);
+        document.cookie = `${email}= ${string_user}`;
+        document.cookie = `loggedIn = false`;
+        return true
         }
-    }
+
 });
