@@ -28,20 +28,10 @@ $( function() {
     })
 } );
 
-/* 
-$( function() {
-    $(".dropdown-btn").click(function(){
-        $(this).next(".dropdown").toggleClass("show");
-        print("Yo")
-    })
-} );
-
-$( function() {
-    $(window).click(function(e) {
-        if (e.target.classList.contains(".dropdown-btn")) {
-            $(".dropdown").each(function () {
-                $(this).hasClass("show") ? $(this).removeClass("show") : print("null");
-            })
-        }
-    })
-} ); */
+$(document).ready(function() {
+    if (!!$.cookie('loggedIn')) {
+        $("#options-logged-out").toggleClass("show");
+        $("#options-logged-in").toggleClass("show");
+        $("#username").text($.cookie('username'));
+    }
+});

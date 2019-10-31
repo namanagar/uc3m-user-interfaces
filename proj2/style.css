@@ -22,6 +22,7 @@ nav {
 
 .nav-item {
   margin-right: 2em;
+  display: inline-block;
 }
 
 .container {
@@ -79,4 +80,8 @@ a {
 
 #options-logged-in {
     display: none;
+}
+
+footer .fa {
+    color: blue;
 }
