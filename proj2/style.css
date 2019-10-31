@@ -12,7 +12,7 @@ nav {
   color: #fff;
 }
 
-#options {
+.options {
   margin-right: 10%;
 }
 
@@ -70,4 +70,13 @@ footer {
     min-width: 5em;
     overflow: auto;
     z-index: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#options-logged-in {
+    display: none;
 }
