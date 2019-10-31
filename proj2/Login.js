@@ -15,9 +15,9 @@ $("form").submit(function(event){
         if (email === cur_email) {
             valid = true;
             username = cur_user_data["username"];
-            document.cookie = 'loggedIn = true';
-            document.cookie = `username = ${username}`;
-            return true
+            document.cookie = 'loggedIn=true' + ';path=/';
+            document.cookie = `username=${username}` + ';path=/';
+            return true;
         }
     }
     error.html("email not registered");

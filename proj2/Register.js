@@ -58,8 +58,8 @@ $("form").submit(function(event){
         };
 
         let string_user = JSON.stringify(user);
-        document.cookie = `${email}= ${string_user}`;
-        document.cookie = `loggedIn = false`;
+        document.cookie = `${email}= ${string_user}` + ';path=/';
+        document.cookie = `loggedIn = false` + ';path=/';
         return true
         }
 
