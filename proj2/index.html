@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My To-Do List</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./script.js"></script>
     <link
@@ -23,9 +23,9 @@
     <nav class="navbar navbar-dark bg-primary">
       <h1 class="navbar-brand mb-0 h1">My To-Do List App</h1>
       <ul class="navbar-nav navbar-right" id="options">
-            <li class="nav-item">Hey</li>
-            <li class="nav-item">Yo</li>
-            <li class="nav-item">Bye</li>
+        <li class="nav-item">Register</li>
+        <li class="nav-item">Login</li>
+        <li class="nav-item">Info</li>
       </ul>
     </nav>
     <main role="main" class="ui container-fluid">
@@ -33,11 +33,15 @@
         <div class="list col-md-4 drop" id="biglist1">
           <div class="card">
             <div class="card-header">
+              <span class="float-right"><i class="fa fa-bars"></i></span>
               <h3 class="card-title">To Do</h3>
             </div>
             <div class="card-body">
               <ul id="list1" class="drop">
                 <li class="card">
+                  <span class="clickable close-btn" data-effect="fadeOut"
+                    ><i class="fa fa-times"></i
+                  ></span>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-4">
@@ -45,7 +49,7 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-title">
-                          <h4>UI Homework</h4>
+                          <h4>User Interfaces Project</h4>
                         </div>
                       </div>
                     </div>
@@ -70,11 +74,15 @@
         <div class="list col-md-4 drop" id="biglist2">
           <div class="card">
             <div class="card-header">
+              <span class="float-right"><i class="fa fa-bars"></i></span>
               <h3 class="card-title">In Progress</h3>
             </div>
             <div class="card-body">
               <ul id="list2" class="drop">
                 <li class="card">
+                  <span class="clickable close-btn" data-effect="fadeOut"
+                    ><i class="fa fa-times"></i
+                  ></span>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-4">
@@ -82,7 +90,7 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-title">
-                          <h4>UI Homework</h4>
+                          <h4>User Interfaces Project</h4>
                         </div>
                       </div>
                     </div>
@@ -107,11 +115,15 @@
         <div class="list col-md-4 drop" id="biglist3">
           <div class="card">
             <div class="card-header">
+              <span class="float-right"><i class="fa fa-bars"></i></span>
               <h3 class="card-title">Done</h3>
             </div>
             <div class="card-body">
-              <ul id="list1" class="drop">
+              <ul id="list3" class="drop">
                 <li class="card">
+                  <span class="close-btn" data-effect="fadeOut"
+                    ><i class="fa fa-times"></i
+                  ></span>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-4">
@@ -119,7 +131,7 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-title">
-                          <h4>UI Homework</h4>
+                          <h4>User Interfaces Project</h4>
                         </div>
                       </div>
                     </div>
@@ -144,10 +156,27 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row-fluid">
           <div class="col-md-12 text-center">
-            <h3>Hi</h3>
+            <h3>
+              <a
+                rel="license"
+                href="http://creativecommons.org/licenses/by-nc/4.0/"
+                ><img
+                  alt="Creative Commons License"
+                  style="border-width:0"
+                  src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"
+              /></a>
+              |
+              <a rel="facebook" href="https://facebook.com"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              |
+              <a rel="twitter" href="https://twitter.com"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </h3>
           </div>
         </div>
       </div>

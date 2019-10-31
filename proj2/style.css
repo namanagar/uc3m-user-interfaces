@@ -6,35 +6,35 @@
 }
 
 nav {
-    min-height: 7.5%;
-    margin-bottom: 2%;
-    font-size: 1.2em;
-    color: #fff;
+  min-height: 7.5%;
+  margin-bottom: 2%;
+  font-size: 1.2em;
+  color: #fff;
 }
 
 #options {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
-.navbar-nav { 
-    flex-direction: row;
+.navbar-nav {
+  flex-direction: row;
 }
 
 .nav-item {
-    margin-right: 2em;
+  margin-right: 2em;
 }
 
 .container {
-    margin-left: 2%;
-    margin-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 img {
-    max-width: 75px;
+  max-width: 75px;
 }
 
 .padded {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 #list1,
@@ -44,13 +44,30 @@ img {
 }
 
 .liked {
-    color: #BD081C;
+  color: #bd081c;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #f7f7f7;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown {
+    display: none;
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5%;
     background-color: #f7f7f7;
+    min-width: 5em;
+    overflow: auto;
+    z-index: 1;
 }
