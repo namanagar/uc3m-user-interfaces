@@ -14,3 +14,10 @@ $( function() {
  
     $( "#biglist1, #biglist2, #biglist3" ).disableSelection();
   } );
+
+$( function() {
+    $(".like-btn").click(function(){
+        $(this).toggleClass("liked");
+    })
+} );
+

@@ -2,12 +2,26 @@
 #list2 li,
 #list3 li {
   font-size: 1.2em;
+  margin-top: 0.5em;
 }
 
 nav {
     min-height: 7.5%;
     margin-bottom: 2%;
-    font-size: 3em !important;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#options {
+    margin-right: 10%;
+}
+
+.navbar-nav { 
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-right: 2em;
 }
 
 .container {
@@ -27,4 +41,16 @@ img {
 #list2,
 #list3 {
   min-height: 50vh;
+}
+
+.liked {
+    color: #BD081C;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #f7f7f7;
 }
