@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Naman Agarwal" />
+    <title>Exercise 7-8</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Part 1</h1>
+      <p id="part-1" onclick="doubleText()">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <br />
+    <h1>Part 2</h1>
+    <ul>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li id="last-item">Python</li>
+    </ul>
+    <button onclick="turnRed()">Click to turn "Python" red!</button>
+    <br />
+    <h1>Part 3</h1>
+    <select multiple id="selector" onclick="updateSelect()">
+      <option>JavaScript</option>
+      <option>Java</option>
+      <option>Python</option>
+    </select>
+    <p id="writable"></p>
+    <br />
+    <h1>Part 4</h1>
+    <div id="part-4">
+      <p>jQuery</p>
+      <p>Node.js</p>
+      <p>Ruby</p>
+    </div>
+  </body>
+</html>

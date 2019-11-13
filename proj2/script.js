@@ -29,7 +29,7 @@ $( function() {
 } );
 
 $(document).ready(function() {
-    if (document.cookie.indexOf('loggedIn') != -1) {
+    if (document.cookie.indexOf('loggedIn=true') != -1) {
         $("#options-logged-out").toggleClass("show");
         $("#options-logged-in").toggleClass("show");
         $("#username").text($.cookie('username'));
