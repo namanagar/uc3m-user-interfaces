@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('table').on('mouseover','tr',function(event){
     var $tr = $(event.currentTarget);
     var status = $tr.find("td:last").html();
-    console.log(status);
+
     if (status === "true") {
       $("#message").text("this person is employee");
     }
